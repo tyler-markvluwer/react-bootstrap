@@ -2,6 +2,7 @@ React = require('react') # no ./ prefix
 Parse = require('parse')
 TodoList = require('./todoList')
 TodoListView = require('./todoListView')
+bootstrap = require('bootstrap')
 
 # import the Parse api keys. Kept in separate files to keep away from public github
 key1 = require('./key1')

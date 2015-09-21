@@ -1,5 +1,4 @@
 React = require('react')
-TodoAdderView = require('./TodoAdderView')
 
 # tag factories
 ul = React.createFactory('ul')
@@ -7,7 +6,7 @@ li = React.createFactory('li')
 div = React.createFactory('div')
 h1 = React.createFactory('h1')
 
-todoListView = React.createClass    
+todoAdderView = React.createClass    
     #################################
     #       React Functions
     #################################
@@ -19,7 +18,7 @@ todoListView = React.createClass
         @forceUpdate()
 
     render: ->
-        div
+    	 div
             className: 'container'
 
             # TODO (tmarkvluwer): refactor me please!
@@ -35,17 +34,4 @@ todoListView = React.createClass
                 div
                     className: 'col-sm-4'
 
-            # TODO (tmarkvluwer): refactor me please!
-            for listItem in @props.todoList.get_items()
-                div
-                    className: 'row'
-
-                    div
-                        className: 'col-sm-4'
-                    div
-                        className: 'col-sm-4 centered-text'
-                        listItem # text here
-                    div
-                        className: 'col-sm-4'
-
-module.exports = React.createFactory(todoListView)
+module.exports = React.createFactory(todoAdderView)
