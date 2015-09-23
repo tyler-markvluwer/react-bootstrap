@@ -1,3 +1,5 @@
+Utils = require('./utils')
+
 class Question
 	
 	constructor: () ->
