@@ -5,8 +5,8 @@ class utils
 	print: (printable) ->
 		console.log printable
 
+	#will generate a random number between min (inclusive) and max (inclusive)
 	rand: (min, max) ->
-		#TODO(cmtholm): Make this work exactly for min and max
-		Math.floor((Math.random() * max) + min) % max + 1;
+		Math.floor(Math.random() * (max - min + 1)) + min;
 
 module.exports = new utils()
