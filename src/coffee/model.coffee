@@ -22,3 +22,5 @@ class Model
 	set_user_answer: (input) ->
 		@user_answer = input
 
+module.exports = Model
+
