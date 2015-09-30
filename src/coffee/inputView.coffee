@@ -5,6 +5,7 @@ div = React.createFactory('div')
 form = React.createFactory('form')
 label = React.createFactory('label')
 input = React.createFactory('input')
+button = React.createFactory('button')
 
 
 inputView = React.createClass    
@@ -27,9 +28,12 @@ inputView = React.createClass
                 placeholder: 'Ex: 5'
                 type: 'number'
                 id: 'answer'
-            input
-                type: 'submit'
-                value: 'Submit'
+            button
+                id: @props.id
+                className: 'btn btn-default'
+                type: 'button'
+                onClick: @props.onClick
+                'Submit'
         
 
 module.exports = React.createFactory(inputView)
