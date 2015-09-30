@@ -19,7 +19,7 @@ inputView = React.createClass
         answer_value = document.getElementById('answer').value
         answer_value = Number(answer_value)
         console.log(answer_value)
-        
+
         @props.model_prop.set_user_answer(answer_value)
         #TODO (cmtholm): Get actual value from user input
 
@@ -27,7 +27,6 @@ inputView = React.createClass
         
         form
             className: 'inputView-form'
-            'Input Form'
             label
                 'Enter your answer: '
             input

@@ -1,4 +1,4 @@
-Utils = require('./utils')
+rand = require('./utils').rand
 
 class Question
 	
