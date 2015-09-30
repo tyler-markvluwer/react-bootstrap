@@ -24,21 +24,34 @@ inputView = React.createClass
         #TODO (cmtholm): Get actual value from user input
 
     render: ->
-        
-        form
-            className: 'inputView-form'
-            label
-                'Enter your answer: '
-            input
-                placeholder: 'Ex: 5'
-                type: 'number'
-                id: 'answer'
-            button
-                id: @props.id
-                className: 'btn btn-default'
-                type: 'button'
-                onClick: @onClick
-                'Submit'
+        div
+            className: 'container'
+            div
+                className: 'row'
+                
+                div
+                    className: 'col-xs-4'
+                
+                div
+                    className: 'col-xs-4'
+
+                    form
+                        className: 'inputView-form'
+                        label
+                            'Enter your answer: '
+                        input
+                            placeholder: 'Ex: 5'
+                            type: 'number'
+                            id: 'answer'
+                        button
+                            id: @props.id
+                            className: 'btn btn-default'
+                            type: 'button'
+                            onClick: @onClick
+                            'Submit'
+                div
+                    className: 'col-xs-4'
+
         
 
 module.exports = React.createFactory(inputView)
