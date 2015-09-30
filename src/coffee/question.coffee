@@ -6,6 +6,7 @@ class Question
 		@number1 = rand(0, 8)
 		@number2 = rand(0, 8)
 		@operand = '+'
+		#TODO (cmtholm): Make operand random
 		@result = @calculate(@number1, @number2, @operand)
 
 	calculate: (number1, number2, operand) ->
