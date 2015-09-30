@@ -5,7 +5,7 @@ class Model
 	constructor: () ->
 		@num_right = 0
 		@num_wrong = 0
-		@question = null
+		@question = new Question()
 		@user_answer = null
 
 	gen_question: () ->
