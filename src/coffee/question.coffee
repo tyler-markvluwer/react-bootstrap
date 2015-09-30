@@ -6,7 +6,7 @@ class Question
 		@number1 = rand(0, 8)
 		@number2 = rand(0, 8)
 		@operand = '+'
-		@result = calculate(@number1, @number2, @operand)
+		@result = @number1 + @number2
 
 	calculate: (number1, number2, operand) ->
 		switch @operand
@@ -16,6 +16,8 @@ class Question
 
 	to_string: () ->
 		@question = "What is " + @number1.toString() + @operand + @number2.toString() + "?"
+		console.log(@question)
+		return @question
 		# TODO(lareeves): Generalize to string method if this is needed elsewhere
 
 
