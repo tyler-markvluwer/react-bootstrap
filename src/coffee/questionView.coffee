@@ -15,12 +15,12 @@ questionView = React.createClass
 				className: 'row'
 					
 				div 
-					className: 'span4'
+					className: 'col-xs-4'
 				div
-					className: 'span4'
+					className: 'col-xs-4'
 					@props.model_prop.question.to_string()
 
 				div
-					className: 'span4'
+					className: 'col-xs-4'
 
 module.exports = React.createFactory(questionView)
