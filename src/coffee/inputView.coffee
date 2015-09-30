@@ -13,8 +13,12 @@ inputView = React.createClass
     #       React Functions
     #################################
 
+
+
     onClick: () ->
-        @props.model_prop.set_user_answer(5)
+        answer_value = document.getElementById('answer').value
+        console.log(answer_value)
+        @props.model_prop.set_user_answer(answer_value)
         #TODO (cmtholm): Get actual value from user input
 
     render: ->
@@ -32,7 +36,7 @@ inputView = React.createClass
                 id: @props.id
                 className: 'btn btn-default'
                 type: 'button'
-                onClick: @props.onClick
+                onClick: @onClick
                 'Submit'
         
 
