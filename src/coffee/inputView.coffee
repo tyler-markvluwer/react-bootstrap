@@ -13,7 +13,8 @@ inputView = React.createClass
     #       React Functions
     #################################
 
-
+    newQuestion: () ->
+        @props.model_prop.gen_question()
 
     onClick: () ->
         answer_value = document.getElementById('answer').value
@@ -30,10 +31,10 @@ inputView = React.createClass
                 className: 'row'
                 
                 div
-                    className: 'col-xs-4'
+                    className: 'col-xs-3'
                 
                 div
-                    className: 'col-xs-4'
+                    className: 'col-xs-6'
 
                     form
                         className: 'inputView-form'
@@ -49,8 +50,14 @@ inputView = React.createClass
                             type: 'button'
                             onClick: @onClick
                             'Submit'
+                        button
+                            clasName: 'btn btn-default'
+                            type: 'reset'
+                            onClick: @newQuestion
+                            'New Question'
+    
                 div
-                    className: 'col-xs-4'
+                    className: 'col-xs-3'
 
         
 
