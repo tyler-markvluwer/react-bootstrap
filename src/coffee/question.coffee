@@ -17,9 +17,12 @@ class Question
 		@result = @calculate(@number1, @number2, @operand)
 
 	calculate: (number1, number2, operand) ->
-		temp = switch @operand
+
+		console.log(operand)
+		temp = switch operand
+		
 			when '+' then (number1 + number2)
-			when '-' then (number2 - number2)
+			when '-' then (number1 - number2)
 			else false
 		return temp
 
