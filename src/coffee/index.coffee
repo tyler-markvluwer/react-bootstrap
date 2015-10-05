@@ -3,6 +3,7 @@ Parse = require('parse')
 InputView = require('./inputView')
 Model = require('./model')
 QuestionView = require('./questionView')
+AnswerView = require('./answerView')
 
 model = new Model()
 
@@ -18,6 +19,12 @@ React.render(
 	QuestionView
 		model_prop: model
 	document.getElementById('questionView-mount')
+)
+
+React.render(
+	AnswerView
+		model_prop: model
+	document.getElementById('answerView-mount')
 )
 # React.render(
 #     TodoListView # which component to mount

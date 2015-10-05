@@ -22,6 +22,7 @@ inputView = React.createClass
         console.log(answer_value)
 
         @props.model_prop.set_user_answer(answer_value)
+
         #TODO (cmtholm): Get actual value from user input
 
     render: ->
