@@ -13,6 +13,7 @@ class Model extends EventEmitter
 
 	gen_question: () ->
 		@question = new Question()
+		@emit 'newq'
 
 		
 	check_answer: () ->

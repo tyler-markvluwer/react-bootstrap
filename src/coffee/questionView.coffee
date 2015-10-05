@@ -5,6 +5,13 @@ div = React.createFactory('div')
 
 questionView = React.createClass
 
+	componentDidMount: ->
+		@props.model_prop.on 'newq', @update
+
+	update: ->
+		@forceUpdate()
+		console.log("updating...")
+
 	render: ->
 		# @props.model_prop.gen_question()
 
