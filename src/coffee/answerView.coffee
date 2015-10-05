@@ -21,7 +21,7 @@ answerView = React.createClass
 
 					div 
 						className: 'col-xs-4'
-						if (!@props.model_prop.question.check_answer)
+						if (!@props.model_prop.check_answer())
 							'You answered: ' + @props.model_prop.user_answer + ' Sorry, the correct answer is: ' + @props.model_prop.correct
 						else
 							'You answered: ' + @props.model_prop.user_answer + ' Congrats! That is correct.'
