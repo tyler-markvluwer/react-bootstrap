@@ -26,6 +26,7 @@ class Question
 	to_string: () ->
 		@question = "What is " + @number1.toString() + @operand + @number2.toString() + "?"
 		console.log(@question)
+		console.log(@result)
 		return @question
 		# TODO(lareeves): Generalize to string method if this is needed elsewhere
 
