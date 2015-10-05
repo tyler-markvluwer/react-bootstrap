@@ -9,9 +9,10 @@ answerView = React.createClass
 
 	update: ->
 		@forceUpdate()
+		console.log("updating...")
 
 	render: ->
-		if(@props.model_prop.user_answer)
+		if(@props.model_prop.user_answer != null)
 			div 
 				className: 'container'  
 

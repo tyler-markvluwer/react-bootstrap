@@ -21,7 +21,7 @@ class Question
 			when '+' then (number1 + number2)
 			when '-' then (number2 - number2)
 			else false
-		return @temp
+		return temp
 
 	to_string: () ->
 		@question = "What is " + @number1.toString() + @operand + @number2.toString() + "?"

@@ -8,10 +8,12 @@ class Model extends EventEmitter
 		@num_wrong = 0
 		@question = new Question()
 		@user_answer = null
+		console.log(typeof(@user_answer))
 		@correct = null
 
 	gen_question: () ->
 		@question = new Question()
+
 		
 	check_answer: () ->
 		if (@user_answer == @question.result)
