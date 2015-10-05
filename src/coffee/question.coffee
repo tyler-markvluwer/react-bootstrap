@@ -4,9 +4,16 @@ class Question
 	
 	constructor: () ->
 		@number1 = rand(0, 8)
-		@number2 = rand(0, 8)
-		@operand = '+'
-		#TODO (cmtholm): Make operand random
+		
+		@operand = switch rand(0,1)
+			when 0 then '-'
+			when 1 then '+'
+			else '+'
+
+		@number2 = switch @operand
+			when '-' then rand(0, 0+@number1)
+			when '+' then rand(0, 8-@number1)
+		
 		@result = @calculate(@number1, @number2, @operand)
 
 	calculate: (number1, number2, operand) ->
