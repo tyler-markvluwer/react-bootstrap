@@ -4,10 +4,17 @@ InputView = require('./inputView')
 Model = require('./model')
 QuestionView = require('./questionView')
 AnswerView = require('./answerView')
+NavbarView = require('./navbarView')
 
 model = new Model()
 
 window.model = model
+
+React.render(
+	NavbarView
+		no_props: null
+	document.getElementById('navbar-mount')
+)
 
 React.render(
 	InputView

@@ -1,7 +1,7 @@
 React = require('react')
 
 div = React.createFactory('div')
-# problem = React.createFactory('Question')
+h2 = React.createFactory('h2')
 
 questionView = React.createClass
 
@@ -25,7 +25,9 @@ questionView = React.createClass
 					className: 'col-xs-4'
 				div
 					className: 'col-xs-4'
-					@props.model_prop.question.to_string()
+					h2
+						className: 'centered-text'
+						@props.model_prop.question.to_string()
 
 				div
 					className: 'col-xs-4'
