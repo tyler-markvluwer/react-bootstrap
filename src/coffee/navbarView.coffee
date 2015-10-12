@@ -51,19 +51,19 @@ NavbarView = React.createClass
               className: "active"
               a
                 href: "#"
-                "Home"
+                "Problems"
             li
               className: 'inactive'
               a
-                href: "#about"
-                "About"
+                href: "#howto"
+                "How To"
             li
               className: "dropdown" 
               a
                 className: "dropdown-toggle"
                 href: "#"
                 'data-toggle': "dropdown"
-                "Themes"
+                "Problem Types"
                 b
                   className: "caret"
 
@@ -72,33 +72,33 @@ NavbarView = React.createClass
 
                 li
                   className: "dropdown-header"
-                  "Admin & Dashboard"
+                  "Beginner"
 
                 li
                   className: ""
                   a
                     href: "#"
-                    "Admin 1"
+                    "Addition"
                 li
                   className: ""
                   a
                     href: "#"
-                    "Admin 2"
+                    "Subtraction"
                 li
                   className: "divider" 
                 li
                   className: "dropdown-header"
-                  "Portfolio"
+                  "Advanced"
                 li
                   className: ""
                   a
                     href: "#"
-                    "Portfolio 1"
+                    "Multiplication"
                 li
                   className: ""
                   a
                     href: "#"
-                    "Portfolio 2"
+                    "Division"
               
                         
             li
