@@ -15,6 +15,7 @@ inputView = React.createClass
     #################################
 
     newQuestion: () ->
+        document.getElementById("answer-input-form").reset()
         @props.model_prop.gen_question()
 
     onClick: () ->
@@ -23,8 +24,6 @@ inputView = React.createClass
         console.log(answer_value)
 
         @props.model_prop.set_user_answer(answer_value)
-
-        #TODO (cmtholm): Get actual value from user input
 
     render: ->
         div
@@ -42,6 +41,7 @@ inputView = React.createClass
                     className: 'col-xs-6 centered-text form-group'
 
                     form
+                        id: 'answer-input-form'
                         className: 'form-inline inputView-form'
                         label
                             'Enter your answer: '
